@@ -15,13 +15,13 @@
   </head>
   <body>
     <h1 class="text-center mt-5">To Do List</h1>
-    <div class="text-center container w-50 m-auto mt-5">
+    <div class="text-center container w-100 m-auto mt-5">
       <div class="input-group mt-5">
-        <input class="form-control" aria-label="With textarea"></input>
-        <button class="btn btn-danger">Add Items</button>
+        <input id="input-value" class="form-control" aria-label="With textarea"></input>
+        <button id="input-btn" class="btn btn-danger ms-1">Add Items</button>
       </div>
       <div class="mt-5">
-        <table class="table">
+        <table id="table" class="table">
           <thead>
             <tr>
               <th scope="col">Number</th>
@@ -29,17 +29,12 @@
               <th scope="col">Action</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-            </tr>
+          <tbody id="content-container">
           </tbody>
         </table>
+        <button id="clear-btn" class="btn btn-danger px-4">Clear All</button>
       </div>
     </div>
-
     <!-- js script  -->
     <script src="./project.js"></script>
   </body>
